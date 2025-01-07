@@ -6,18 +6,23 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Cacia S R Sousa">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg" href="./assets/img/curious-cat.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg" href="./assets/img/cat-face.svg" />
+    <link href="./styles/reset.css" rel="stylesheet"/>
+    <link href="./styles/style.css" rel="stylesheet"/>
     <title>Meu Perfil</title>
 </head>
 <body>
-    <header>
-        <div id="header_content">
+    <header id="header_content">
             <div id="titulo">
+                <img id="logo" src="./assets/img/chocolatecosmos.png" alt="Duas flores do tipo cosmos">
                 <h1>Cacia S R Sousa</h1>
             </div>
             <div id="menu">
                 <nav>
-                    <ul id="menu">
+                    <ul id="menu-itens">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -27,41 +32,35 @@
                     </ul>
                 </nav>
             </div>
-        </div>
     </header>
     <main>
         <section id="about">
-            <h2>Sobre mim</h2>
+            <h2>Olá meu nome é Cacia</h2>
             <div id="conteudo">
-                <img style="width: 200px" src="./assets/img/user_02.svg" alt="Imagem genérica que representa a criadora deste conteúdo"/>
+                <div id="imagem">
+                    <div id="sombra">
+                        <img id="minha-foto" src="./assets/img/cacia-perfil-2.jpg" alt="Foto da criadora do conteúdo da página."/>
+                    </div>
+                </div>
+                
                 <article id="sobre_texto">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Voluptatem odio possimus, dolorem earum atque
-						itaque quas soluta placeat iure omnis porro cum
-						debitis sequi libero! Deleniti vitae quis hic
-						cumque. Lorem ipsum, dolor sit amet consectetur
-						adipisicing elit. Eius inventore ullam, quia
-						deserunt enim cumque hic officia repudiandae ad ab
-						et sapiente qui vitae accusamus adipisci provident
-						sit assumenda laboriosam!
+                        Minha história começa com uma pequena família do nordeste, meu pais, irmão, irmã e eu bebê, vindo pra São Paulo pra morar por aqui permanentemente. Eu sempre fui, desde de criança muito curiosa, gostava de aprender sobre tudo, na prática e sozinha. Ser auto-didata sempre foi parte da minha personalidade, então enquanto eu crescia, começei a ter contato com músicas e séries estrangeiras e e eu queria entender tudo que estava sendo falado em sua essência, sem legendas, sem traduções ou dublagens e isso me levou a aprender inglês, o que abriu um novo mundo pra mim. E depois do inglês, continuei sempre querendo aprender mais e isso me levou ao desenho, a costura, a finanças e o francês.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Voluptatem odio possimus, dolorem earum atque
-						itaque quas soluta placeat iure omnis porro cum
-						debitis sequi libero! Deleniti vitae quis hic
-						cumque. Lorem ipsum, dolor sit amet consectetur
-						adipisicing elit. Eius inventore ullam, quia
-						deserunt enim cumque hic officia repudiandae ad ab
-						et sapiente qui vitae accusamus adipisci provident
-						sit assumenda laboriosam!
+                        Por causa dessa curiosidade sem limites e vontade de aprender tudo no mundo, tive dificuldades de escolher uma carreira, então enquanto decidia fui trabalhar com atendimento ao público, o que me proporcionou muito crescimento e me fez perceber que eu poderia fazer qualquer coisa que eu  colocasse minha curiosidade e amor por aprender. Durante a pandemia e inspirada pelo meu irmão e pela sua  paixão por tecnologia e como ela transformou sua vida. E pensando  “Se eu consigo aprender outras línguas e a me comunicar com pessoas de todo o mundo, porque não aprender a me comunicar com computadores também? Aprender a sua língua e ser a ponte entre máquina e ser humano”. Isso despertou minha curiosidade e foi ai que eu começei a jornada de desenvolvimento de software.
+                    </p>
+                    <p>
+                        Começei estudando Front-End fazendo várias aplicações interativas com JavaScript, HTML e CSS, como por exemplo a Border Radius Previewer, que  é uma aplicação dinâmica  pra visualização de valores CSS de bordas de containers. Mas ainda sentia a necessidade de aprofundar ainda mais em programação e encontrei o curso CS50 da HarvardX, onde aprendi com C, Python e SQL Lite, uma forte base de ciência da computação e pra construir as pontes mentais que me faltavam pra ligar os dois lados ingressei no BootCamp Java FullStack da instituição Generation Brasil, onde desenvolvi aplicações desde um Blog Pessoal focado em Back-end e Banco de Dados até uma aplicação completa em equipe do banco de dados à interação com o cliente final.
+                    </p>
+                    <p>
+                        Toda a minha vivência, o fato de ser auto-didata e ser poliglota, me faz acreditar que o meu desenvolvimento no mercado possa ser exponencial e que sua empresa possa ser o palco perfeito pra isso. Para ver mais do meu lado técnico, você pode acessar o meu <a id="github-texto" href="https://github.com/CaciaRodrigues" >Github</a> e caso queira que eu me aprofunde mais em algum tópico, ficaria feliz em conversar.
                     </p>
                 </article>
             </div>
         </section>
         <section id="video">
-            <h2>Um vídeo do youtube:</h2>
+            <h2>Um vídeo do Youtube:</h2>
             <div id="youtube">
                 <iframe 
                     width="560" 
@@ -78,15 +77,15 @@
         </section>
     </main>
     <footer>
-        <section id="redes_sociais">
-            <a href="https://www.linkedin.com/in/cacia-rodrigues-57b16b193/">
-                <img src="./assets/img/linkedin.svg" alt="linkedIn">
-            </a>
-            <a href="https://github.com/CaciaRodrigues">
-                <img src="./assets/img/github.svg" alt="Github">
-            </a>
-        </section>
-        <h3>Feito com 🧡 por Cacia S R Sousa - 2025</h3>
+            <section id="redes_sociais">
+                <a href="https://www.linkedin.com/in/cacia-rodrigues-57b16b193/">
+                    <img src="./assets/img/linkedin.svg" alt="linkedIn">
+                </a>
+                <a href="https://github.com/CaciaRodrigues">
+                    <img src="./assets/img/github.svg" alt="Github">
+                </a>
+            </section>
+            <h3>Desenvolvido por Cacia S R Sousa, 2025</h3>
     </footer>
 </body>
 </html>
