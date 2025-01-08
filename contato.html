@@ -6,12 +6,16 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Cacia S R Sousa">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<link rel="icon" type="image/svg" href="./assets/img/contato.svg" />
+		<link rel="icon" type="image/svg" href="./assets/img/dark-contact.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/css/style.css">
 		<title>Meu Perfil</title>
 	</head>
 	<body>
 		<header>
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<div id="titulo">
 					<h1>Cacia S R Sousa</h1>
 				</div>
@@ -19,10 +23,10 @@
 					<nav>
 						<ul id="menu">
 							<li>
-								<a href="index.html"> Home </a>
+								<a href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="contato.html"> Contato </a>
+								<a href="contato.html">Contato</a>
 							</li>
 						</ul>
 					</nav>
@@ -30,7 +34,7 @@
 			</div>
 		</header>
 		<main>
-             <section id="contact">
+             <section id="contact" class="flex">
                 <form action="#" method="submit" id="formulario">
                     <label for="nome">Nome: </label>
 					<input
@@ -73,9 +77,9 @@
 
 					<button type="submit">Enviar</button>
                 </form>
-                <article id="mapa">
-					<p>Av. Paulista, 100</p>
-					<p>São Paulo - SP</p>
+                <article id="mapa" class="flex_start">
+					<p class="endereco">Av. Paulista, 100</p>
+					<p class="endereco">São Paulo - SP</p>
 
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
@@ -94,21 +98,19 @@
             </section>
 
 		</main>
-		<footer>
-            <section id="redes_sociais">
-
-                    <a href="https://www.linkedin.com/in/caciarodrigues/">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="https://github.com/CaciaRodrigues">
-                        <img src="assets/img/github.svg" alt="Github" />
-                    </a>
-            </section>
-
-			<h3>
-				Feito com 🧡 por Cacia S R Sousa - 2025
-			</h3>
-
+		<footer class="flex footer_contato" >
+			<section id="redes_sociais">
+				<a href="https://www.linkedin.com/in/cacia-rodrigues-57b16b193/">
+					<img src="./assets/img/light-in.svg" alt="linkedIn" class="social_icon">
+				</a>
+				<a href="https://github.com/CaciaRodrigues">
+					<img src="./assets/img/light-github.svg" alt="Github" class="social_icon">
+				</a>
+				<a href="https://www.instagram.com/caciarodrigues.cr/">
+					<img src="./assets/img/light-insta.svg" alt="Instagram" class="social_icon">
+				</a>
+			</section>
+			<h3>Desenvolvido por Cacia S R Sousa, 2025</h3>
 		</footer>
 	</body>
 </html>

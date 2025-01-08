@@ -6,12 +6,16 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Cacia S R Sousa">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg" href="./assets/img/cat-face.svg" />
+    <link rel="icon" type="image/svg" href="./assets/img/dark-cat-face.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Meu Perfil</title>
 </head>
 <body>
     <header>
-        <div id="header_content">
+        <div id="header_content" class="flex">
             <div id="titulo">
                 <h1>Cacia S R Sousa</h1>
             </div>
@@ -30,10 +34,10 @@
         </div>
     </header>
     <main>
-        <section id="about">
-            <h2>Sobre mim</h2>
-            <div id="conteudo">
-                <img style="width: 200px" src="./assets/img/cacia-perfil.png" alt="Imagem da autora do conteúdo da página"/>
+        <section id="about" class="flex_start">
+            <h2>Olá, eu sou a Cacia</h2>
+            <div id="conteudo" class="flex">
+                <img class="img_profile" src="./assets/img/cacia-perfil.png" alt="Imagem da autora do conteúdo da página"/>
                 <article id="sobre_texto">
                     <p>
                         Minha história começa com uma pequena família do nordeste, meu pais, irmão, irmã e eu bebê, vindo pra São Paulo pra morar por aqui permanentemente. Eu sempre fui, desde de criança muito curiosa, gostava de aprender sobre tudo, na prática e sozinha. Ser auto-didata sempre foi parte da minha personalidade, então enquanto eu crescia, começei a ter contato com músicas e séries estrangeiras e e eu queria entender tudo que estava sendo falado em sua essência, sem legendas, sem traduções ou dublagens e isso me levou a aprender inglês, o que abriu um novo mundo pra mim. E depois do inglês, continuei sempre querendo aprender mais e isso me levou ao desenho, a costura, a finanças e o francês.
@@ -44,15 +48,12 @@
                     <p>
                         Começei estudando Front-End fazendo várias aplicações interativas com JavaScript, HTML e CSS, como por exemplo a Border Radius Previewer, que  é uma aplicação dinâmica  pra visualização de valores CSS de bordas de containers. Mas ainda sentia a necessidade de aprofundar ainda mais em programação e encontrei o curso CS50 da HarvardX, onde aprendi com C, Python e SQL Lite, uma forte base de ciência da computação e pra construir as pontes mentais que me faltavam pra ligar os dois lados ingressei no BootCamp Java FullStack da instituição Generation Brasil, onde desenvolvi aplicações desde um Blog Pessoal focado em Back-end e Banco de Dados até uma aplicação completa em equipe do banco de dados à interação com o cliente final.
                     </p>
-                    <p>
-                        Toda a minha vivência, o fato de ser auto-didata e ser poliglota, me faz acreditar que o meu desenvolvimento no mercado possa ser exponencial e que sua empresa possa ser o palco perfeito pra isso. Para ver mais do meu lado técnico, você pode acessar o meu <a id="github-texto" href="https://github.com/CaciaRodrigues" >Github</a> e caso queira que eu me aprofunde mais em algum tópico, ficaria feliz em conversar.
-                    </p>
                 </article>
             </div>
         </section>
-        <section id="video">
-            <h2>Um vídeo do youtube:</h2>
-            <div id="youtube">
+        <section id="video" class="flex">
+            <h2>Meu vídeo favorito:</h2>
+            <div id="youtube" class="flex_start">
                 <iframe 
                     width="560" 
                     height="315" 
@@ -67,16 +68,19 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="flex">
         <section id="redes_sociais">
             <a href="https://www.linkedin.com/in/cacia-rodrigues-57b16b193/">
-                <img src="./assets/img/linkedin.svg" alt="linkedIn">
+                <img src="./assets/img/light-in.svg" alt="linkedIn" class="social_icon">
             </a>
             <a href="https://github.com/CaciaRodrigues">
-                <img src="./assets/img/github.svg" alt="Github">
+                <img src="./assets/img/light-github.svg" alt="Github" class="social_icon">
+            </a>
+            <a href="https://www.instagram.com/caciarodrigues.cr/">
+                <img src="./assets/img/light-insta.svg" alt="Instagram" class="social_icon">
             </a>
         </section>
-        <h3>Feito com 🧡 por Cacia S R Sousa - 2025</h3>
+        <h3>Desenvolvido por Cacia S R Sousa, 2025</h3>
     </footer>
 </body>
 </html>
