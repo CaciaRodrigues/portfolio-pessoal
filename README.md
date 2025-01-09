@@ -30,7 +30,7 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
    git clone https://github.com/CaciaRodrigues/portfolio-pessoal.git
 2. Abra o projeto no Visual Studio Code:
     ```bash
-   code portfolio
+   code portfolio-pessoal
 3. No VSCode, abra um arquivo HTML do projeto (ex: `index.html`).
 4. Clique com o botão direito no editor e selecione **"Open with Live Server"**.  
    - Alternativamente, você pode iniciar o **Live Server** através da barra de status do VSCode.
