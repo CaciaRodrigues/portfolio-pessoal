@@ -27,6 +27,17 @@ body {
     color: var(--darkest)
 }
 
+#titulo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 40px;
+}
+
 h1 {
     font-family: "playwrite AU SA", serif;
     color: var(--mid-light);
