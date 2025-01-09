@@ -103,8 +103,8 @@ p {
 }
 
 #menu li a:hover {
-    color: var(--mid-light);
-    text-decoration: underline;
+    color: var(--light);
+    /* text-decoration: underline; */
 }
 
 #about {
@@ -125,7 +125,7 @@ p {
 }  */
 
 #imagem {
-    display: flex;
+    /* display: flex; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -139,7 +139,7 @@ p {
     align-items: center;
     max-width: 90%;
     height: 100%;
-    background: radial-gradient(var(--dark) 10%, var(--mid-dark) 30%, var(--mid-light) 50%,var(--light) 60%, var(--lightest) 75%);
+    background: radial-gradient(var(--dark) 10%, var(--mid-dark) 25%, var(--mid-light) 40%,var(--light) 55%, var(--lightest) 75%);
     box-shadow: 10px 10px 12px var(--lightest), -10px -10px 12px var(--lightest);
     animation: animateBorderRadius2 10s infinite alternate;
 }
@@ -147,7 +147,7 @@ p {
 #minha-foto {
     max-width: 80%;
     background-color: var(--mid-dark);
-    box-shadow: 10px 10px 12px var(--mid-light), -10px -10px 12px var(--mid-light);
+    /* box-shadow: 10px 10px 12px var(--mid-light), -10px -10px 12px var(--mid-light); */
     animation: animateBorderRadius 10s infinite alternate;
 }
 
@@ -218,8 +218,7 @@ footer {
 }
 
 .social_icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
     filter: brightness(0) 
             saturate(100%) 
             invert(95%) 
@@ -316,4 +315,6 @@ iframe {
 }
 
 
-
+.heart {
+    width: 1.5rem;
+}
