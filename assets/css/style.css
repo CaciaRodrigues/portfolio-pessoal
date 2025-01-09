@@ -11,7 +11,8 @@
 :root {
     --darkest: #33212B;
     --dark: #43303B;
-    --medium: #5D4954;
+    --mid-dark: #5D4954;
+    --medium: #7E6975;
     --mid-light: #A18B97;
     --light: #C3ABB8;
     --lightest: #EBD3DF;
@@ -80,12 +81,12 @@ p {
 }
 
 #header_content {
-    height: 60px;
+    height: 100%;
     position: sticky;
     top: 0;
     width: 100%;
     justify-content: space-between;
-    padding: 24px;
+    padding: 10px;
     background-color: var(--darkest);
     box-shadow: 0 5px 6px var(--mid-light);
 }
@@ -138,14 +139,14 @@ p {
     align-items: center;
     max-width: 90%;
     height: 100%;
-    background: radial-gradient(var(--dark) 10%, var(--medium) 30%, var(--mid-light) 50%,var(--light) 60%, var(--lightest) 75%);
+    background: radial-gradient(var(--dark) 10%, var(--mid-dark) 30%, var(--mid-light) 50%,var(--light) 60%, var(--lightest) 75%);
     box-shadow: 10px 10px 12px var(--lightest), -10px -10px 12px var(--lightest);
     animation: animateBorderRadius2 10s infinite alternate;
 }
 
 #minha-foto {
     max-width: 80%;
-    background-color: var(--medium);
+    background-color: var(--mid-dark);
     box-shadow: 10px 10px 12px var(--mid-light), -10px -10px 12px var(--mid-light);
     animation: animateBorderRadius 10s infinite alternate;
 }
@@ -219,6 +220,25 @@ footer {
 .social_icon {
     width: 4rem;
     height: 4rem;
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(95%) 
+            sepia(5%) 
+            saturate(1422%) 
+            hue-rotate(285deg) 
+            brightness(96%) 
+            contrast(91%);
+}
+
+.social_icon:hover {  
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(99%) 
+            sepia(2%) 
+            saturate(7428%) 
+            hue-rotate(281deg) 
+            brightness(77%) 
+            contrast(94%);
 }
 
 #contact {
@@ -266,7 +286,7 @@ form span{
 form button {
     text-align: center;
     padding: 0.75rem 2rem;
-    background: var(--medium);
+    background: var(--mid-dark);
     border: 1px solid var(--dark);
     color: var(--lightest);
     border-radius: 0.75rem;
