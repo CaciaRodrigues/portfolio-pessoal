@@ -201,9 +201,10 @@ textarea {
 
 form span{
     margin: 0 0 0.5rem 0.75rem;
-    font-size: 0.75rem;
+    font-size: 0.90rem;
+    font-weight: 500;
     line-height: 1rem;
-    color: red;
+    color: #b20136;
 }
 
 form button {
