@@ -194,6 +194,16 @@ p {
     gap: 1rem;
 }
 
+#youtube {
+    height: 500px;
+    align-items: center;
+}
+
+#youtube iframe {
+    height: 90%;
+    width: 700px;
+}
+
 footer {
     flex-direction: column;
     margin: 0;
@@ -213,6 +223,7 @@ footer {
 #redes_sociais {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin: 1rem 0 0 0;
     width: 320px;
 }
@@ -238,6 +249,14 @@ footer {
             hue-rotate(281deg) 
             brightness(77%) 
             contrast(94%);
+}
+
+.spotify {
+    width: 2.7rem;
+}
+
+.linkedin {
+    width: 3.5rem;
 }
 
 #contact {
@@ -314,7 +333,31 @@ iframe {
     font-weight: 600;
 }
 
-
 .heart {
     width: 1.5rem;
+}
+
+#divider {
+    border: none;
+    height: 1px;
+    background-color: var(--light);
+    width: 70%;
+    margin: 50px auto;
+    box-shadow: 0 4px 7px rgba(93, 73, 84, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 10px;   
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--darkest);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
 }
